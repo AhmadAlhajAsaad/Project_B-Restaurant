@@ -6,6 +6,7 @@ namespace Project_B_week_4
     {
         static void Main(string[] args)
         {
+            //test
             string menu = "\nHoofdmenu optie hebben:\n\n1- Reserveren. \n2- Menu kaart zien.\n3- Algemene informatie tonen.\nKlik op een ster om terug naar het hoofdmenu.";
 
             Startpoint: Console.WriteLine("Welkom bij ons restaurant reserveringssesteem!\n");
