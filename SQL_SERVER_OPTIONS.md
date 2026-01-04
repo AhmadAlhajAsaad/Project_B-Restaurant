@@ -24,7 +24,7 @@
    dotnet run
    ```
 
-### Option 2: Use PostgreSQL (You already have this!)
+### Option 2: Use PostgreSQL 
 
 Since you have PostgreSQL installed, we can switch the project to use it:
 
@@ -32,7 +32,7 @@ Since you have PostgreSQL installed, we can switch the project to use it:
 2. This requires changing the NuGet packages and connection string
 3. Would you like me to do this?
 
-### Option 3: Use SQLite (Simplest for development)
+### Option 3: Use SQLite 
 
 Use SQLite which requires no server installation:
 1. I can switch the project to SQLite
