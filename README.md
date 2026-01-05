@@ -70,7 +70,7 @@ A full-stack restaurant website built with C# ASP.NET Core Web API, React, TypeS
 
 To verify your API is working:
 
-- Visit http://localhost:5000/swagger to see the Swagger UI (if enabled).
+- Visit http://localhost:5000/swagger/index.html to see the Swagger UI (if enabled).
 - Or, try accessing a specific controller endpoint, such as http://localhost:5000/api/MenuItems (replace with your actual route).
 
 ### Frontend Setup
