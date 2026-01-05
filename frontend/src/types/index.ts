@@ -15,7 +15,7 @@ export interface Reservation {
   customerEmail: string;
   customerPhone: string;
   reservationDate: string;
-  reservationTime: string;
+  reservationTime?: string;
   numberOfGuests: number;
   specialRequests?: string;
   status?: string;
