@@ -12,8 +12,8 @@ export const reservationService = {
     return response.data;
   },
 
-  createReservation: async (reservation: Omit<Reservation, 'id' | 'createdAt' | 'status'>): Promise<Reservation> => {
-    const response = await api.post('/Reservations', reservation);
+  createReservation: async (payload: any): Promise<Reservation> => {
+    const response = await api.post('/Reservations', payload);
     return response.data;
   },
 
