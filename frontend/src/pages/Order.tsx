@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { menuService } from '../services/menuService';
-import { orderService } from '../services/orderService';
+import { createOrder, getOrderById, updateOrder, updateOrderStatus, deleteOrder } from '../services/orderService';
 import { MenuItem, OrderItem, Order as OrderType } from '../types';
 
 const Order: React.FC = () => {
@@ -95,7 +95,7 @@ const Order: React.FC = () => {
         orderItems: cart
       };
 
-      await orderService.createOrder(order);
+      await createOrder(order);
       setSuccess(true);
       setCart([]);
       setCustomerInfo({
