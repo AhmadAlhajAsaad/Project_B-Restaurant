@@ -43,6 +43,7 @@
 - **Priority**: High
 - **Status**: ✅ Implemented
 
+
 #### FR-1.5 Online Ordering
 - **Description**: Users can place food orders for delivery
 - **Features**:
@@ -52,6 +53,16 @@
   - View order total
 - **Priority**: Medium
 - **Status**: ✅ Implemented (Order page)
+
+#### FR-1.6 Order History & Retrieval
+- **Description**: After placing an order, users must be able to view all past orders, including each order's owner information and the date it was placed.
+- **Features**:
+  - Orders are saved in the database and retrievable for future reference
+  - A button is available in the UI to view all orders
+  - Clicking the button navigates to a page listing all orders, their owners, and order dates
+  - Each order displays the date it was placed
+- **Priority**: High
+- **Status**: ⏳ To be implemented
 
 ---
 

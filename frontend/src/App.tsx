@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Menu from './pages/Menu';
 import Reservations from './pages/Reservations';
 import Order from './pages/Order';
+import Orders from './pages/Orders';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
               <li><Link to="/menu">Menu</Link></li>
               <li><Link to="/reservations">Reservations</Link></li>
               <li><Link to="/order">Order Online</Link></li>
+              <li><Link to="/orders">Order History</Link></li>
             </ul>
           </nav>
         </nav>
@@ -26,6 +28,7 @@ function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/reservations" element={<Reservations />} />
           <Route path="/order" element={<Order />} />
+          <Route path="/orders" element={<Orders />} />
         </Routes>
       </div>
     </Router>
