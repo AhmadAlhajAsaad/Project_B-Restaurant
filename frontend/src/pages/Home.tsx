@@ -59,7 +59,6 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* Why Choose Us Section */}
       <div style={{ marginTop: '0', textAlign: 'center' }}>
         <h2 style={{ color: '#2c3e50', marginBottom: '1rem' }}>Why Choose Us?</h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
