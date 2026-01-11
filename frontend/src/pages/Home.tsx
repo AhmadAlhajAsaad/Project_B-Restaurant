@@ -12,19 +12,19 @@ const Home: React.FC = () => {
 
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
         <div className="menu-item">
-          <h3>🍕 Delicious Food</h3>
+          <h3>Delicious Food</h3>
           <p>Fresh ingredients, expertly prepared by our talented chefs. From Italian classics to modern fusion cuisine.</p>
           <Link to="/menu" className="btn btn-primary">Browse Menu</Link>
         </div>
 
         <div className="menu-item">
-          <h3>📅 Make a Reservation</h3>
+          <h3>Make a Reservation</h3>
           <p>Book your table in advance and enjoy a seamless dining experience with friends and family.</p>
           <Link to="/reservations" className="btn btn-primary">Reserve Now</Link>
         </div>
 
         <div className="menu-item">
-          <h3>🚗 Order Online</h3>
+          <h3>Order Online</h3>
           <p>Craving our food at home? Order online and we'll deliver it fresh to your doorstep.</p>
           <Link to="/order" className="btn btn-primary">Order Now</Link>
         </div>
