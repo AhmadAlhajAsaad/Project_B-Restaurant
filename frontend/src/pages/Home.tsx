@@ -37,8 +37,8 @@ const Home: React.FC = () => {
           <div>
             <h3 style={{ color: '#3498db', marginBottom: '0.5rem' }}>Opening Hours</h3>
             <p style={{ margin: 0 }}>
-              Mon–Thu: 11:00 AM – 10:00 PM<br />
-              Fri–Sat: 11:00 AM – 11:00 PM<br />
+              Mon–Thu: 11:00 AM – 09:00 PM<br />
+              Fri–Sat: 11:00 AM – 09:00 PM<br />
               Sun: 12:00 PM – 9:00 PM
             </p>
           </div>
