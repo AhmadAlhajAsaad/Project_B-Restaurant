@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Home.css';
 
 const Home: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Home: React.FC = () => {
         <Link to="/menu" className="btn">View Menu</Link>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '3rem' }}>
+      <div className="menu-grid">
         <div className="menu-item">
           <h3>Delicious Food</h3>
           <p>Fresh ingredients, expertly prepared by our talented chefs. From Italian classics to modern fusion cuisine.</p>
@@ -31,27 +32,27 @@ const Home: React.FC = () => {
       </div>
 
       {/* Restaurant Information Section */}
-      <div style={{ marginTop: '4rem', marginBottom: '4rem', textAlign: 'center', background: '#f8f9fa', padding: '2rem', borderRadius: '12px', boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}>
-        <h2 style={{ color: '#2c3e50', marginBottom: '1.5rem' }}>Restaurant Information</h2>
-        <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '3rem', fontSize: '1.1rem' }}>
+      <div className="restaurant-info">
+        <h2>Restaurant Information</h2>
+        <div className="info-grid">
           <div>
-            <h3 style={{ color: '#3498db', marginBottom: '0.5rem' }}>Opening Hours</h3>
-            <p style={{ margin: 0 }}>
+            <h3>Opening Hours</h3>
+            <p>
               Mon–Thu: 11:00 AM – 09:00 PM<br />
               Fri–Sat: 11:00 AM – 09:00 PM<br />
               Sun: 12:00 PM – 9:00 PM
             </p>
           </div>
           <div>
-            <h3 style={{ color: '#3498db', marginBottom: '0.5rem' }}>Location</h3>
-            <p style={{ margin: 0 }}>
+            <h3>Location</h3>
+            <p>
               123 Main Street<br />
               Cityville, ST 12345
             </p>
           </div>
           <div>
-            <h3 style={{ color: '#3498db', marginBottom: '0.5rem' }}>Contact</h3>
-            <p style={{ margin: 0 }}>
+            <h3>Contact</h3>
+            <p>
               Phone: (123) 456-7890<br />
               Email: info@restaurant.com
             </p>
@@ -59,23 +60,23 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: '0', textAlign: 'center' }}>
-        <h2 style={{ color: '#2c3e50', marginBottom: '1rem' }}>Why Choose Us?</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '2rem', marginTop: '2rem' }}>
+      <div className="why-choose">
+        <h2>Why Choose Us?</h2>
+        <div className="why-grid">
           <div>
-            <h3 style={{ color: '#3498db' }}>Fresh Ingredients</h3>
+            <h3>Fresh Ingredients</h3>
             <p>We source only the finest, freshest ingredients for every dish.</p>
           </div>
           <div>
-            <h3 style={{ color: '#3498db' }}>Expert Chefs</h3>
+            <h3>Expert Chefs</h3>
             <p>Our experienced chefs bring passion and creativity to every plate.</p>
           </div>
           <div>
-            <h3 style={{ color: '#3498db' }}>Cozy Atmosphere</h3>
+            <h3>Cozy Atmosphere</h3>
             <p>Enjoy your meal in our warm and inviting dining space.</p>
           </div>
           <div>
-            <h3 style={{ color: '#3498db' }}>Great Service</h3>
+            <h3>Great Service</h3>
             <p>Our friendly staff ensures you have a memorable experience.</p>
           </div>
         </div>

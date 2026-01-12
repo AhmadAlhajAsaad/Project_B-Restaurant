@@ -1,0 +1,122 @@
+/* Menu grid for Home page */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+/* Home Page Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.hero {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.hero h1 {
+  color: #2c3e50;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: #3498db;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #217dbb;
+}
+.btn-primary {
+  background: #2ecc71;
+}
+.btn-primary:hover {
+  background: #27ae60;
+}
+.menu-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 2rem;
+  text-align: center;
+}
+.menu-item h3 {
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+.menu-item p {
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.restaurant-info {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.restaurant-info h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+.restaurant-info .info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.1rem;
+}
+.restaurant-info h3 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+.restaurant-info p {
+  margin: 0;
+}
+.why-choose {
+  margin-top: 0;
+  text-align: center;
+}
+.why-choose h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+.why-choose .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.why-choose h3 {
+  color: #3498db;
+}
+.why-choose p {
+  color: #555;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  .restaurant-info {
+    padding: 1rem;
+  }
+  .menu-item {
+    padding: 1rem;
+  }
+}
