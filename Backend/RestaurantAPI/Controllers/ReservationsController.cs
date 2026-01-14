@@ -10,10 +10,12 @@ namespace RestaurantAPI.Controllers;
 public class ReservationsController : ControllerBase
 {
     private readonly RestaurantDbContext _context;
+    private readonly IConfiguration _configuration;
 
-    public ReservationsController(RestaurantDbContext context)
+    public ReservationsController(RestaurantDbContext context, IConfiguration configuration)
     {
         _context = context;
+        _configuration = configuration;
     }
 
     // GET: api/Reservations
@@ -43,6 +45,24 @@ public class ReservationsController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Reservation>> PostReservation(Reservation reservation)
     {
+        // Get open/close hours from config
+        var openStr = _configuration["RestaurantHours:Open"];
+        var closeStr = _configuration["RestaurantHours:Close"];
+        if (!TimeSpan.TryParse(openStr, out var openTime) || !TimeSpan.TryParse(closeStr, out var closeTime))
+        {
+            return StatusCode(500, "Restaurant hours are not configured correctly.");
+        }
+
+        // Combine reservation date and time
+        var reservationDateTime = reservation.ReservationDate.Date + reservation.ReservationTime;
+        var reservationTimeOfDay = reservation.ReservationTime;
+
+        // Check if reservation time is within open hours
+        if (reservationTimeOfDay < openTime || reservationTimeOfDay > closeTime)
+        {
+            return BadRequest($"Cannot make a reservation at this time. Restaurant is open from {openTime:hh\\:mm} to {closeTime:hh\\:mm}.");
+        }
+
         reservation.CreatedAt = DateTime.UtcNow;
         _context.Reservations.Add(reservation);
         await _context.SaveChangesAsync();
