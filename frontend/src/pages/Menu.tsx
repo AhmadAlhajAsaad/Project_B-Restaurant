@@ -21,7 +21,7 @@ const Menu: React.FC = () => {
       setMenuItems(items);
       setError(null);
     } catch (err) {
-      setError('Failed to load menu items. Please make sure the backend is running.');
+      setError('Failed to load menu items. Please make sure the backend is running and try again.');
       console.error('Error loading menu:', err);
     } finally {
       setLoading(false);
